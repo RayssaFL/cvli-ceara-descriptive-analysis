@@ -166,6 +166,7 @@ The analysis was conducted using:
 
 # Project Structure
 
+```
 cvli-ceara-descriptive-analysis
 │
 ├── data
@@ -178,7 +179,7 @@ cvli-ceara-descriptive-analysis
 │   └── charts
 │
 └── README.md
-
+```
 ---
 
 # Key Insights
