@@ -170,13 +170,10 @@ The analysis was conducted using:
 cvli-ceara-descriptive-analysis
 │
 ├── data
-│   └── cvli_dataset.csv
+│   └── bd.xlsx
 │
 ├── scripts
-│   └── analysis.R
-│
-├── figures
-│   └── charts
+│   └── AnaliseDados_CVLI.R
 │
 └── README.md
 ```
