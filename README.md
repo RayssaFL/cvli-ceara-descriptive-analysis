@@ -190,7 +190,7 @@ This descriptive analysis allows the identification of patterns in:
 These insights contribute to understanding **lethal violence dynamics in Fortaleza** using statistical methods.
 
 ---
-
+```
 # Author
 
 Developed as part of a **Descriptive Statistics academic project**.
@@ -198,3 +198,4 @@ Developed as part of a **Descriptive Statistics academic project**.
 Student: Rayssa Fialho 
 Institution: University of Fortaleza (UNIFOR)  
 Year: 2025
+```
