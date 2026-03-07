@@ -1,40 +1,35 @@
-# CVLI Ceará – Descriptive Data Analysis
+# CVLI Ceará – Descriptive Statistical Analysis (2024–2025)
 
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge\&logo=r\&logoColor=white)
-![Statistics](https://img.shields.io/badge/Statistics-Analysis-blue?style=for-the-badge)
-![Data Analysis](https://img.shields.io/badge/Data-Analysis-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Project-Academic-success?style=for-the-badge)
+![R](https://img.shields.io/badge/R-Statistical%20Computing-blue)
+![RStudio](https://img.shields.io/badge/RStudio-IDE-blue)
+![dplyr](https://img.shields.io/badge/dplyr-data%20manipulation-blue)
+![Status](https://img.shields.io/badge/status-academic%20project-green)
 
-Descriptive statistical analysis of **Violent Intentional Lethal Crimes (CVLI)** in Fortaleza, Ceará, Brazil.
-This project explores patterns in the dataset using **R**, applying descriptive statistics, frequency tables, and data visualization techniques.
+## Project Overview
 
-The objective is to summarize and better understand the characteristics of violent lethal crimes through statistical indicators and graphical analysis.
+This project presents a **descriptive statistical analysis of Violent Intentional Lethal Crimes (CVLI)** in **Fortaleza, Ceará (Brazil)** during the years **2024 and 2025**.
 
-This analysis focuses on **CVLI occurrences recorded in Fortaleza during the years 2024 and 2025**.
+The objective is to explore patterns related to **victim characteristics, crime circumstances, and temporal distribution** using descriptive statistical methods and data visualization techniques.
+
+The analysis was conducted using **R**, focusing on the construction of frequency tables, cross-tabulations, statistical measures, and graphical representations.
+
+This project was developed as part of an **academic assignment in Descriptive Statistics**, demonstrating practical applications of **data analysis using real public security data**.
 
 ---
 
 # Dataset
 
-The dataset used in this project comes from the **Secretaria da Segurança Pública e Defesa Social do Ceará (SSPDS)**.
+The dataset used in this project comes from the **Public Security Secretariat of Ceará (SSPDS)**.
 
-Sources:
+Official sources:
 
-* https://www.sspds.ce.gov.br/indicadores-de-seguranca-publica/
-* https://www.sspds.ce.gov.br/wp-content/uploads/sites/24/2025/01/CVLI-Anual.pdf
+https://www.sspds.ce.gov.br/indicadores-de-seguranca-publica/
 
-The dataset includes information such as:
+Reference document:
 
-* Nature of the crime
-* Means employed
-* Victim gender
-* Victim age
-* Victim race
-* Victim education level
-* Day of the week
-* Date and time of occurrence
+https://www.sspds.ce.gov.br/wp-content/uploads/sites/24/2025/01/CVLI-Anual.pdf
 
-For the purposes of this analysis, the dataset was **filtered to include only records from Fortaleza and restricted to the years 2024 and 2025**, allowing a focused descriptive analysis of recent CVLI occurrences in the city.
+For this analysis, the data was **filtered to include only occurrences in Fortaleza during the years 2024 and 2025**.
 
 ---
 
@@ -42,141 +37,166 @@ For the purposes of this analysis, the dataset was **filtered to include only re
 
 ## General Objective
 
-Provide descriptive statistical support for the analysis of **Violent Intentional Lethal Crimes (CVLI)** in Fortaleza.
+Provide descriptive insights into **Violent Intentional Lethal Crimes (CVLI)** in **Fortaleza for the years 2024 and 2025**.
 
 ## Specific Objectives
 
-* Describe the occurrence of CVLI considering temporal and categorical distributions.
-* Organize statistical indicators using frequency tables and descriptive measures.
-* Visualize data through charts and graphs.
-* Identify patterns and characteristics in the dataset.
+- Describe the distribution of CVLI occurrences across different categories.
+- Identify patterns related to **victim demographics and crime characteristics**.
+- Present statistical indicators through **tables and visualizations**.
+- Explore temporal patterns in the occurrence of violent crimes.
+
+---
+
+# Variables Analyzed
+
+The following variables were analyzed:
+
+- Nature of the crime
+- Means employed
+- Victim gender
+- Victim education level
+- Victim race
+- Day of the week
+- Month of occurrence
+- Year of occurrence
+- Hour of occurrence
+- Victim age
 
 ---
 
 # Methodology
 
-The analysis was conducted using **R and RStudio**.
+The analysis followed the steps below:
 
-Steps performed in the project:
+1. Data filtering for **Fortaleza (2024–2025)**.
+2. Data organization and preparation.
+3. Calculation of **simple and relative frequencies**.
+4. Construction of **cross-tabulations between categorical variables**.
+5. Creation of **visualizations to represent distributions and patterns**.
+6. Calculation of **descriptive statistical measures**.
 
-1. Data collection from official SSPDS public security indicators.
-2. Data cleaning and organization.
-3. Data filtering to include only records from **Fortaleza** for the years **2024 and 2025**.
-4. Classification of variables (qualitative and quantitative).
-5. Construction of frequency tables.
-6. Calculation of descriptive statistics.
-7. Creation of graphical visualizations.
-
-Statistical techniques applied:
-
-* Frequency tables (simple and relative)
-* Measures of central tendency
-* Measures of dispersion
-* Quartiles and separatrices
-* Boxplot for outlier detection
+The analysis was implemented using **R and RStudio**.
 
 ---
 
-# Data Analysis
-
-The following analyses were performed:
+# Statistical Analysis
 
 ## Frequency Tables
 
-Variables analyzed:
+Simple and relative frequencies were calculated for:
 
-* Nature
-* Means Employed
-* Gender
-* Victim Education
-* Victim Race
-* Day of the Week
+- Nature of the crime
+- Means employed
+- Victim gender
+- Victim education level
+- Victim race
+- Day of the week
 
-## Cross Tables
+---
 
-* Means Employed × Gender
-* Education Level × Victim Race
+## Cross-tabulation Analysis
 
-## Graphical Analysis
+Relationships between categorical variables were analyzed:
 
-### Pie Charts
+- Means employed × Victim gender
+- Victim education level × Victim race
 
-* Gender
-* Means Employed
+These tables help identify potential patterns between crime characteristics and victim demographics.
 
-### Bar Charts
+---
 
-* Day of the Week
-* Victim Education
+# Data Visualization
 
-### Line Charts
+Several types of charts were used to illustrate the distributions.
 
-* Month
-* Year
-* Hour of occurrence
+## Pie Charts
 
-## Descriptive Statistics
+Used to represent proportions of:
 
-Variable analyzed:
+- Victim gender
+- Means employed
 
-* Victim Age
+## Bar Charts
 
-Measures calculated:
+Used to display categorical distributions:
 
-* Mean
-* Median
-* Mode
-* Variance
-* Standard Deviation
-* Quartiles
-* Interquartile Range
+- Day of the week
+- Victim education level
+
+## Line Charts
+
+Used to analyze temporal patterns:
+
+- Number of occurrences by month
+- Number of occurrences by year
+- Number of occurrences by hour
 
 ## Boxplot
 
-A boxplot was used to identify **outliers and dispersion in victim age distribution**.
+Used to analyze the distribution of **victim age**, including quartiles, median, and possible outliers.
+
+---
+
+# Descriptive Statistics
+
+For the variable **Victim Age**, the following measures were calculated:
+
+- Mean
+- Median
+- Mode
+- Quartiles
+- Minimum and maximum values
+- Dispersion analysis
+
+These statistics help describe the **central tendency and variability of victim ages** in the dataset.
 
 ---
 
 # Tools and Technologies
 
-* **R**
-* **RStudio**
-* **dplyr**
-* **ggplot2**
-* **Base R graphics**
+The analysis was conducted using:
+
+- **R**
+- **RStudio**
+- **dplyr**
+- **Base R Graphics**
 
 ---
 
 # Project Structure
 
-```
 cvli-ceara-descriptive-analysis
 │
 ├── data
-│   └── dataset.csv
+│ └── cvli_dataset.csv
 │
 ├── scripts
-│   └── analysis.R
+│ └── analysis.R
 │
 ├── figures
-│   └── charts
-│
-├── report
-│   └── statistical_report.pdf
+│ └── charts
 │
 └── README.md
-```
 
 ---
 
-# Results
+# Key Insights
 
-The analysis provides a descriptive overview of CVLI occurrences in Fortaleza, highlighting patterns related to victim characteristics, crime methods, and temporal distribution.
+This descriptive analysis allows the identification of patterns in:
 
-These findings help illustrate how descriptive statistics can support **data-driven understanding of public safety indicators**.
+- victim demographic characteristics
+- crime occurrence timing
+- distribution of violent crimes across categories
+
+These insights contribute to understanding **lethal violence dynamics in Fortaleza** using statistical methods.
 
 ---
 
 # Author
 
-Project developed for a **Statistical Data Analysis assignment**.
+Developed as part of a **Descriptive Statistics academic project**.
+
+Student: Rayssa Fialho 
+Institution: University of Fortaleza (UNIFOR)  
+Year: 2025
