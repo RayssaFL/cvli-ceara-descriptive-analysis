@@ -191,9 +191,9 @@ These insights contribute to understanding **lethal violence dynamics in Fortale
 
 ---
 ```
-# Author
+Author
 
-Developed as part of a **Descriptive Statistics academic project**.
+Developed as part of a Descriptive Statistics academic project.
 
 Student: Rayssa Fialho 
 Institution: University of Fortaleza (UNIFOR)  
