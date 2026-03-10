@@ -200,6 +200,37 @@ tabela_medidas <- data.frame(
 
 View(tabela_medidas)
 
+# medidas de dispersao
+#amplitude
+amplitude <- max(bd$`Idade da Vítima`, na.rm = TRUE) - min(bd$`Idade da Vítima`, na.rm = TRUE)
+amplitude
+#variancia
+variancia <- var(bd$`Idade da Vítima`, na.rm = TRUE)
+round(variancia, 2)
+#desvio padrão
+desvio_padrao <- sd(bd$`Idade da Vítima`, na.rm = TRUE)
+#media
+media <- mean(bd$`Idade da Vítima`)
+round(media, 2)
+#coeficiente_variacao 
+coef_variacao <- (desvio_padrao / media) * 100
+round(coef_variacao, 2)
+#tabela apresentacao dos resultado de dispersao
+tabela_dispersao <- data.frame(
+  Medidas_de_Dispersao = c("Amplitude", "Variância", "Desvio_Padrão", "Coeficiente_de_Variacao"),
+  Valor = c(round(amplitude, 2),
+            round(variancia, 2),
+            round(desvio_padrao, 2),
+            round(coef_variacao, 2))
+)
+View(tabela_dispersao)
+
+#separatrizes
+quartis <- quantile(bd$`Idade da Vítima`, probs = c(0.25, 0.5, 0.75), na.rm = TRUE)
+quartis
+summary(bd$`Idade da Vítima`)
+
+
 #boxplot para idade da vítima
 bp <- boxplot(bd$`Idade da Vítima`,
               main = "Boxplot da idade das vítimas de CVLI",
@@ -215,5 +246,7 @@ text(x = rep(1, length(bp$out)),
      cex = 0.8,
      col = "red")
 mtext("Fonte: Elaboração própria a partir do banco de dados CVLI (Fortaleza, 2024–2025)", side = 1, line = 4, cex = 0.8)
-#checar os quartis para verificar o boxplot
-#quantile(bd$`Idade da Vítima`, na.rm = TRUE)
+
+
+
+
