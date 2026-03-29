@@ -183,7 +183,7 @@ Autora
 
 Desenvolvido como parte de um projeto acadêmico de Estatística Descritiva.
 
-**Rayssa Fialho**  
+Rayssa Fialho 
 Universidade de Fortaleza (UNIFOR)  
 2026  
 ```
