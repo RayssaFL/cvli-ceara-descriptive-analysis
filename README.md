@@ -160,6 +160,8 @@ cvli-ceara-descriptive-analysis
 ├── scripts
 │   └── AnaliseDados_CVLI.R
 │
+├── plots/
+│
 └── README.md
 ```
 ---
